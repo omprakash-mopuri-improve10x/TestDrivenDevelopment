@@ -25,7 +25,7 @@ public class NameInverter {
     private static String getPostNominal(List<String> names) {
         String postNominal = "";
         for (int i = 0; i < names.size(); i++) {
-            postNominal = names.get(i) + " ";
+            postNominal += names.get(i) + " ";
         }
         return postNominal;
     }
