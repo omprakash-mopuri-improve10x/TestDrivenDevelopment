@@ -1,6 +1,7 @@
-package omprakash.scoring;
+package omprakash.scoring.nameinverter;
 
-import org.junit.Assert;
+import omprakash.scoring.nameinverter.NameInverter;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 

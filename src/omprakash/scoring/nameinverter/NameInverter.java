@@ -1,10 +1,11 @@
-package omprakash.scoring;
+package omprakash.scoring.nameinverter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class NameInverter {
+
     public String invertName(String name) {
         if (name.equals("")) {
             return "";
