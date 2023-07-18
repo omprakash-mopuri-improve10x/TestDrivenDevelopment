@@ -1,6 +1,4 @@
-package omprakash.scoring.nameinverter;
-
-import omprakash.scoring.nameinverter.NameInverter;
+package omprakash.tdd.nameinverter;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package omprakash.scoring.duplicateletters;
+package omprakash.tdd.duplicateletters;
 
 public class DuplicateLetters {
 

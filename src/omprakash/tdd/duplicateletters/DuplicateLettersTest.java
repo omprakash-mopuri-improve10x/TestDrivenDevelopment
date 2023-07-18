@@ -1,4 +1,4 @@
-package omprakash.scoring.duplicateletters;
+package omprakash.tdd.duplicateletters;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package omprakash.scoring.strechedword;
+package omprakash.tdd.stretchedword;
 
 public class StretchedWord {
 

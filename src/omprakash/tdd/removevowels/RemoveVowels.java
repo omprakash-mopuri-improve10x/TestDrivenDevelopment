@@ -1,4 +1,4 @@
-package omprakash.scoring.removevowels;
+package omprakash.tdd.removevowels;
 
 public class RemoveVowels {
 

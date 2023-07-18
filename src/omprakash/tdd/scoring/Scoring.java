@@ -1,4 +1,4 @@
-package omprakash.scoring;
+package omprakash.tdd.scoring;
 
 public class Scoring {
     public int[] calculateScores(String score) {

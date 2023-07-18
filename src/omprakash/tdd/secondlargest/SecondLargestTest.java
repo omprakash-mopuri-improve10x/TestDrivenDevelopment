@@ -1,4 +1,4 @@
-package omprakash.scoring.secondlargest;
+package omprakash.tdd.secondlargest;
 
 import org.junit.jupiter.api.Test;
 

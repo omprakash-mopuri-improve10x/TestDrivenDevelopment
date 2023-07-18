@@ -1,4 +1,4 @@
-package omprakash.scoring.strechedword;
+package omprakash.tdd.stretchedword;
 
 import org.junit.jupiter.api.Test;
 

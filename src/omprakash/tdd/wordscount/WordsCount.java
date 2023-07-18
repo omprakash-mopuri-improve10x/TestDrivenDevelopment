@@ -1,4 +1,4 @@
-package omprakash.scoring.wordscount;
+package omprakash.tdd.wordscount;
 
 public class WordsCount {
 

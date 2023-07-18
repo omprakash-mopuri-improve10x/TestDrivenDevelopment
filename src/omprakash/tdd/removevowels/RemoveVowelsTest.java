@@ -1,4 +1,4 @@
-package omprakash.scoring.removevowels;
+package omprakash.tdd.removevowels;
 
 import org.junit.jupiter.api.Test;
 

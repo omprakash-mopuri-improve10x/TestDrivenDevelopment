@@ -1,4 +1,4 @@
-package omprakash.scoring.nameinverter;
+package omprakash.tdd.nameinverter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
