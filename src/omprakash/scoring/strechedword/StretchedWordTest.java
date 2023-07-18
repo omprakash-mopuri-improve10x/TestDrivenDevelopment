@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StrechedWordTest {
+class StretchedWordTest {
 
-    private StrechedWord strechedWord = new StrechedWord();
+    private StretchedWord stretchedWord = new StretchedWord();
 
     @Test
     public void nothing() {
@@ -14,49 +14,49 @@ class StrechedWordTest {
 
     @Test
     public void givenEmpty_returnsEmpty() {
-        String result = strechedWord.getStrechedWord("");
+        String result = stretchedWord.getStretchedWord("");
         assertEquals("", result);
     }
 
     @Test
     public void givenNull_returnsEmpty() {
-        String result = strechedWord.getStrechedWord(null);
+        String result = stretchedWord.getStretchedWord(null);
         assertEquals("", result);
     }
 
     @Test
     public void givenHi_returnsHi() {
-        StrechedWord strechedWord = new StrechedWord();
-        String result = strechedWord.getStrechedWord("Hi");
+        StretchedWord stretchedWord = new StretchedWord();
+        String result = stretchedWord.getStretchedWord("Hi");
         assertEquals("Hi", result);
     }
 
     @Test
     public void givenHii_returnsHi() {
-        String result = strechedWord.getStrechedWord("Hii");
+        String result = stretchedWord.getStretchedWord("Hii");
         assertEquals("Hi", result);
     }
 
     @Test
     public void givenHIi_returnsHI() {
-        String result = strechedWord.getStrechedWord("HIi");
+        String result = stretchedWord.getStretchedWord("HIi");
         assertEquals("HI", result);
     }
     @Test
     public void givenH_returnsH() {
-        String result = strechedWord.getStrechedWord("H");
+        String result = stretchedWord.getStretchedWord("H");
         assertEquals("H", result);
     }
 
     @Test
     public void givenPpoeemm_returnsPoem() {
-        String result = strechedWord.getStrechedWord("Ppoeemm");
+        String result = stretchedWord.getStretchedWord("Ppoeemm");
         assertEquals("Poem", result);
     }
 
     @Test
     public void givenHiHellloo_returnsHiHelo() {
-        String result = strechedWord.getStrechedWord("Hii Hellloo");
+        String result = stretchedWord.getStretchedWord("Hii Hellloo");
         assertEquals("Hi Helo", result);
     }
 }

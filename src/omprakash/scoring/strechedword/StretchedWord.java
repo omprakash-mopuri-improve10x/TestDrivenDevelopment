@@ -1,8 +1,8 @@
 package omprakash.scoring.strechedword;
 
-public class StrechedWord {
+public class StretchedWord {
 
-    public String getStrechedWord(String text) {
+    public String getStretchedWord(String text) {
         String newText = "";
         if (text != null && text.length() > 0) {
             newText = String.valueOf(text.charAt(0));
