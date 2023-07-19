@@ -11,16 +11,23 @@ public class RunningSumTest {
     }
 
     @Test
-    public void givenNull_returnsEmpty(){
+    public void givenNull_returnsEmpty() {
         RunningSum runningSum = new RunningSum();
         int[] result = runningSum.getRunningSum(null);
-        assertArrayEquals(new int[] {}, result);
+        assertArrayEquals(new int[]{}, result);
     }
 
     @Test
-    public void givenEmpty_returnsEmpty(){
+    public void givenEmpty_returnsEmpty() {
         RunningSum runningSum = new RunningSum();
-        int[] result = runningSum.getRunningSum(new int[] {});
-        assertArrayEquals(new int[] {}, result);
+        int[] result = runningSum.getRunningSum(new int[]{});
+        assertArrayEquals(new int[]{}, result);
+    }
+
+    @Test
+    public void givenOneTwo_returnsOneThree() {
+        RunningSum runningSum = new RunningSum();
+        int[] result = runningSum.getRunningSum(new int[] {1, 2});
+        assertArrayEquals(new int[] {1, 3}, result);
     }
 }
