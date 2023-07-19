@@ -23,4 +23,10 @@ public class WarTest {
         int result = war.warOfNumbers(new int[] {});
         assertEquals(-1, result);
     }
+
+    @Test
+    public void givenOneTwo_returnsOne() {
+        int result = war.warOfNumbers(new int[] {1, 2});
+        assertEquals(1, result);
+    }
 }
