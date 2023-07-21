@@ -8,7 +8,7 @@ public class MaximumGap {
             maxGap = -1;
         } else {
             for (int i = 0; i < nums.length - 1; i++) {
-                int gap = nums[i] > nums[i + 1] ? nums[i] - nums[i + 1]: nums[i + 1] - nums[i];
+                int gap = nums[i] > nums[i + 1] ? nums[i] - nums[i + 1] : nums[i + 1] - nums[i];
                 if (gap > maxGap) {
                     maxGap = gap;
                 }
