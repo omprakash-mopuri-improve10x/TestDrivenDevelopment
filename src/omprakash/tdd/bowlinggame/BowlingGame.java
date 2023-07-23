@@ -4,15 +4,16 @@ public class BowlingGame {
 
     private int[] rolls = new int[21];
     private int currentRollIndex = 0;
+
     public void roll(int pins) {
         rolls[currentRollIndex] = pins;
         currentRollIndex++;
     }
 
     /*
-    If you knock down all 10 pins in the first shot of a frame, you get a strike.
+    If you knock down all 10 pins in the first shot of a frame, you get a strike(*).
         How to score: A strike earns 10 points plus the sum of your next two shots.
-    If you knock down all 10 pins using both shots of a frame, you get a spare.
+    If you knock down all 10 pins using both shots of a frame, you get a spare(/).
         How to score: A spare earns 10 points plus the sum of your next one shot.
      */
 
