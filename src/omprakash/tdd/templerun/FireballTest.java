@@ -38,13 +38,13 @@ public class FireballTest {
     }
 
     @Test
-    public void given10_whenGetSpeedMethodCalled_thenReturn10() throws Fireball.InvalidFireballSpeedException {
+    public void given10_whenGetSpeedMethodCalled_thenReturn10() throws Fireball.InvalidFireballSpeedException, Obstacle.InvalidObstacleDamageException {
         Fireball fireball = new Fireball(10);
         assertEquals(10, fireball.getSpeed());
     }
 
     @Test
-    public void whenRollMethodCalled_displayRollingMessage() throws Fireball.InvalidFireballSpeedException {
+    public void whenRollMethodCalled_displayRollingMessage() throws Fireball.InvalidFireballSpeedException, Obstacle.InvalidObstacleDamageException {
         Fireball fireball = new Fireball(30);
         fireball.roll();
         assertEquals("Fireball is rolling with 30 speed", outputStream.toString().trim());

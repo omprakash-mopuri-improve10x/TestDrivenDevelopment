@@ -1,10 +1,11 @@
 package omprakash.tdd.templerun;
 
-public class Fireball {
+public class Fireball extends Obstacle {
     private int speed;
 
-    public Fireball(int speed) throws InvalidFireballSpeedException {
-        if (speed < 0 || speed > 100) {
+    public Fireball(int speed) throws InvalidFireballSpeedException, InvalidObstacleDamageException {
+        super("Fireball", 30);
+        if (Redundant.isInvalid(speed)) {
             throw new InvalidFireballSpeedException();
         }
         this.speed = speed;

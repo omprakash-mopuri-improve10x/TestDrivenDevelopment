@@ -12,7 +12,7 @@ public class Player {
 
     public Player(String name, int health) throws InvalidHealthException {
         this.name = (name == null) ? "" : name.trim();
-        if (health < 0 || health > 100) {
+        if (Redundant.isInvalid(health)) {
             throw new InvalidHealthException();
         }
         this.health = health;
@@ -40,6 +40,10 @@ public class Player {
 
     public void jump() {
         System.out.println("Name jumped to avoid obstacles!");
+    }
+
+    public void reduceHealth(int damage) {
+        health -= damage;
     }
 
     public class InvalidHealthException extends Exception {
