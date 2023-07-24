@@ -6,7 +6,7 @@ public class Redundant {
         return value < 0 || value > 100;
     }
 
-    public static boolean isInvalidName(String name) {
-        return name == null;
+    public static String handleName(String name) {
+        return name == null ? "" : name.trim();
     }
 }

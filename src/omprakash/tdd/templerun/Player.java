@@ -11,7 +11,7 @@ public class Player {
     }
 
     public Player(String name, int health) throws InvalidHealthException {
-        this.name = (name == null) ? "" : name.trim();
+        this.name = Redundant.handleName(name);
         if (Redundant.isInvalid(health)) {
             throw new InvalidHealthException();
         }

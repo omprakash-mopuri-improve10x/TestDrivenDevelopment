@@ -5,7 +5,7 @@ public class Obstacle {
     protected int damage;
 
     public Obstacle(String name, int damage) throws InvalidObstacleDamageException {
-        this.name = name == null ? "" : name.trim();
+        this.name = Redundant.handleName(name);
         if (Redundant.isInvalid(damage)) {
             throw new InvalidObstacleDamageException();
         }
