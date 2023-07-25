@@ -5,7 +5,7 @@ public class Coin {
     private int value;
 
     public Coin(int value) throws InvalidCoinValueException {
-        if (Redundant.isInvalid(value)) {
+        if (Redundant.isInvalidValue(value)) {
             throw new InvalidCoinValueException();
         }
         this.value = value;

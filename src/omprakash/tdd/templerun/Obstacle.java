@@ -6,7 +6,7 @@ public class Obstacle {
 
     public Obstacle(String name, int damage) throws InvalidObstacleDamageException {
         this.name = Redundant.handleName(name);
-        if (Redundant.isInvalid(damage)) {
+        if (Redundant.isInvalidValue(damage)) {
             throw new InvalidObstacleDamageException();
         }
         this.damage = damage;

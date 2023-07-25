@@ -5,7 +5,7 @@ public class Fireball extends Obstacle {
 
     public Fireball(int speed) throws InvalidFireballSpeedException, InvalidObstacleDamageException {
         super("Fireball", 30);
-        if (Redundant.isInvalid(speed)) {
+        if (Redundant.isInvalidValue(speed)) {
             throw new InvalidFireballSpeedException();
         }
         this.speed = speed;

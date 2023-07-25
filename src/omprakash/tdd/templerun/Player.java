@@ -12,7 +12,7 @@ public class Player {
 
     public Player(String name, int health) throws InvalidHealthException {
         this.name = Redundant.handleName(name);
-        if (Redundant.isInvalid(health)) {
+        if (Redundant.isInvalidValue(health)) {
             throw new InvalidHealthException();
         }
         this.health = health;
