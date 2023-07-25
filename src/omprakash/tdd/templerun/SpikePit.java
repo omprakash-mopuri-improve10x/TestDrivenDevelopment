@@ -13,7 +13,7 @@ public class SpikePit extends Obstacle {
     }
 
     public void trap(Player player) {
-        System.out.println(name + " trapped" + player.getName() + " inside! it is " + width + " meters wide");
+        System.out.println(name + " trapped " + player.getName() + " inside!. it is " + width + " meters wide");
         player.reduceHealth(damage);
     }
 

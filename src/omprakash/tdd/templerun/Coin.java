@@ -1,10 +1,11 @@
 package omprakash.tdd.templerun;
 
-public class Coin {
+public class Coin extends Obstacle {
 
     private int value;
 
-    public Coin(int value) throws InvalidCoinValueException {
+    public Coin(int value) throws InvalidCoinValueException, InvalidObstacleDamageException {
+        super("Coin", 0);
         if (Redundant.isInvalidValue(value)) {
             throw new InvalidCoinValueException();
         }

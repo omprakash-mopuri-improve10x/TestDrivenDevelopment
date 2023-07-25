@@ -21,12 +21,12 @@ public class CoinTest {
     }
 
     @Test
-    public void given10_whenGetValueCalled_thenReturn10() throws Coin.InvalidCoinValueException {
+    public void given10_whenGetValueCalled_thenReturn10() throws Coin.InvalidCoinValueException, Obstacle.InvalidObstacleDamageException {
         assertEquals(10, new Coin(10).getValue());
     }
 
     @Test
-    public void given20_whenGetValueCalled_thenReturn20() throws Coin.InvalidCoinValueException {
+    public void given20_whenGetValueCalled_thenReturn20() throws Coin.InvalidCoinValueException, Obstacle.InvalidObstacleDamageException {
         assertEquals(20, new Coin(20).getValue());
     }
 }
